@@ -1,9 +1,11 @@
 import React from 'react'
+import Layout from '../components/Layout';
+
 
 export default function Shop() {
     return (
-        <div>
+        <Layout>
             <h1>E-Commerce Coming 2021</h1>
-        </div>
+        </Layout>
     )
 }

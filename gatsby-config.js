@@ -88,14 +88,20 @@ module.exports = {
           host: 'localhost',
           user: 'root',
           password: 'rootroot',
-          database: 'BrainStationLibrary'
+          database: 'CapstonePerfectBlend'
         },
         queries: [
           {
-            statement: 'SELECT * FROM library',
-            idFieldName: 'idlibrary',
-            name: 'library'
-          }
+            statement: 'SELECT * FROM perfectblendlearnsection',
+            idFieldName: 'id',
+            name: 'perfectblendlearnsection'
+          },
+          // {
+          //   statement: 'SELECT * FROM testimportcoffee',
+          //   idFieldName: 'id',
+          //   name: 'testimportcoffee'
+
+          // }
         ]
       }
     },
