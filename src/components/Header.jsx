@@ -6,7 +6,7 @@ import {Link} from 'gatsby';
 export default function Header () {
     return (
         <header>
-            <Link to="/">logo here</Link>
+            <Link to="/">Perfect blend logo</Link>
         </header>
     )
 }

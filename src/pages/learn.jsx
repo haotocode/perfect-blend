@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 
 export default function Test({data}) {
@@ -8,10 +8,11 @@ export default function Test({data}) {
             <h1>Learn</h1>
             <div>
             {data.allMysqlPerfectblendlearnsection.edges.map(({ node }, index) => (
-              <tr key={index}>
+              <div key={node.id}>
                 <p>{node.title}</p>
                 <p>{node.description}</p>
-              </tr>
+                <Link to={node.path} >Read more</Link>
+              </div>
             ))}
             </div>
         </Layout>
@@ -20,12 +21,13 @@ export default function Test({data}) {
 
 export const query = graphql `
 query MyQuery {
-  allMysqlPerfectblendlearnsection {
+  allMysqlPerfectblendlearnsection(sort: {fields: id}) {
     edges {
       node {
         id
         title
         description
+        path
       }
     }
   }
