@@ -1,11 +1,11 @@
 import React from 'react'
-// import UserForm from '../components/UserForm/UserForm';
+import UserForm from '../components/UserForm/UserForm';
 
 export default function Explore() {
     return (
         <div>
-            {/* <UserForm/> */}
-            <h1>explore form here</h1>
+            <h1>Explore your own blend</h1>
+            <UserForm/>
         </div>
     )
 }
