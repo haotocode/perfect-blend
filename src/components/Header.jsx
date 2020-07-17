@@ -6,7 +6,7 @@ import {Link} from 'gatsby';
 export default function Header () {
     return (
         <header>
-            <h1>logo here</h1>
+            <Link to="/">logo here</Link>
         </header>
     )
 }
