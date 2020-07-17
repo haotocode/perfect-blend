@@ -12,9 +12,27 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
-      preview: false
+      preview: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "settings"
+    label: "Setting"
+    files:
+        - label: "Contact info"
+          name: contact_info
+          file: site/settings/contact_info.json
+          fields: 
+            - {label: "Phone", name: "phone", widget: "string"}
+            - {label: "Email", name: "Email", widget: "string"}
+            - label: "Address"
+              name: "address" 
+              widget: "object" 
+              fields:
+                - {label: Street, name: street, widget: string}
+                - {label: Street2, name: street2, widget: string}
+                - {label: City, name: city, widget: string}
+            
+
