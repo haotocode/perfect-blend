@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Perfect Blend`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Hao Tien Pan`,
+      summary: `Freshy new developer`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    description: `Coffee blend explore for those that want to branch out.`,
+    // siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    // social: {
+    //   twitter: `kylemathews`,
+    // },
   },
   plugins: [
     'gatsby-plugin-sass',
