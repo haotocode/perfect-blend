@@ -8,13 +8,12 @@ export default function About() {
     return (
         <Layout>
             <Typed 
-            className="header"
+            className="about"
             strings={['hello world']}
             typeSpeed={100}
             />
             <h1>About</h1>
             <p>bio here</p>
         </Layout>
-
     )
 }
