@@ -1,15 +1,18 @@
 import React from 'react';
+import '../styles/index.scss';
 import Layout from '../components/Layout';
 import Nav from '../components/Nav/Nav';
 
-const IndexPage = () => {
+const Home = () => {
   return (
-    <Layout>
-      <>
-        <Nav/>
-      </>
-    </Layout>
+    <div className="homepage">
+      <Layout>
+        <>
+          <Nav className="homepage"/>
+        </>
+      </Layout>
+    </div>
   )
 }
 
-export default IndexPage;
+export default Home;
