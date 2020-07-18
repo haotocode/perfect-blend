@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Perfect Blend`,
+    title: `PERFECT BLEND`,
     author: {
       name: `Hao Tien Pan`,
       summary: `Freshy new developer`,
@@ -45,9 +45,9 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
-          `gatsby-plugin-sass`,
           `gatsby-transformer-sharp`, 
           `gatsby-plugin-sharp`,
+          `gatsby-plugin-sass`,
         ],
       },
     },

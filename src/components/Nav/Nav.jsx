@@ -9,9 +9,9 @@ export default function Nav() {
             <Link className="nav__link" to='/learn'>Learn</Link>
             <Link className="nav__link" to='/method'>Method</Link>
             <Link className="nav__link" to='/explore'>Explore</Link>
-            <Link className="nav__link" to='shop'>Shop</Link>
-            <Link className="nav__link" to='blog'>Blog</Link>
-            <Link className="nav__link" to='contactus'>Contact</Link>
+            <Link className="nav__link" to='/shop'>Shop</Link>
+            <Link className="nav__link" to='/blog'>Blog</Link>
+            <Link className="nav__link" to='/contactus'>Contact</Link>
       </nav>
     )
 }

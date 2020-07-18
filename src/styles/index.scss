@@ -1,1 +1,13 @@
 @import '../styles/partials/colors.scss';
+@import '../styles/partials/mixins.scss';
+
+.home {
+    &__title{
+        @include raleway-extra-bold;
+        font-size: 40px;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+}

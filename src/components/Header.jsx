@@ -1,14 +1,15 @@
 import React from 'react';
 import {Link} from 'gatsby';
-import '../styles/partials/fonts.scss';
 import '../styles/header.scss'
 // import './Header.module.scss'
 // import HeaderStyles from './Header.module.scss';
 
-export default function Header () {
+const Header = () => {
     return (
         <header className="header">
-            <Link to="/" className="header__link">Perfect blend logo</Link>
+            <Link to="/" className="header__link">PERFECT BLEND</Link>
         </header>
     )
 }
+
+export default Header;

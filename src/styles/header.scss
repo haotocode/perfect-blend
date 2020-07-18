@@ -1,8 +1,10 @@
+@import '../styles/partials/mixins.scss';
+
 .header {
     &__link {
         text-decoration: none;
         // font-family: "Raleway-ThinItalic";
-        font-family: "Raleway-ExtraBold";
+        @include raleway-bold
         font-size: 40px;
     }
 }
