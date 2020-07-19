@@ -1,7 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import { rhythm, scale } from "../utils/typography"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+// import { rhythm, scale } from "../utils/typography"
 
 const BlogLayout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -16,7 +15,8 @@ const BlogLayout = ({ location, title, children }) => {
         //   marginTop: 0,
         // }}
       >
-        <Link
+        <AniLink
+        paintDrip duration={1}
           // style={{
           //   boxShadow: `none`,
           //   color: `inherit`,
@@ -24,7 +24,7 @@ const BlogLayout = ({ location, title, children }) => {
           to={`/`}
         >
           {title}
-        </Link>
+        </AniLink>
       </h1>
     )
   } else {
@@ -35,7 +35,8 @@ const BlogLayout = ({ location, title, children }) => {
         //   marginTop: 0,
         // }}
       >
-        <Link
+        <AniLink
+        paintDrip duration={1}
           // style={{
           //   boxShadow: `none`,
           //   color: `inherit`,
@@ -43,7 +44,7 @@ const BlogLayout = ({ location, title, children }) => {
           to={`/`}
         >
           {title}
-        </Link>
+        </AniLink>
       </h3>
     )
   }

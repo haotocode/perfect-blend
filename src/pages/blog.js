@@ -1,5 +1,6 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Bio from "../components/bio"
 import Layout from '../components/Layout';
 import SEO from "../components/seo"
@@ -23,9 +24,9 @@ const BlogIndex = ({ data, location }) => {
                 //   marginBottom: rhythm(1 / 4),
                 // }}
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <AniLink swipe direction="left" style={{ boxShadow: `none` }} to={node.fields.slug}>
                   {title}
-                </Link>
+                </AniLink>
               </h3>
               <small>{node.frontmatter.date}</small>
             </header>
