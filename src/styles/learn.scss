@@ -1,0 +1,25 @@
+@import '../styles/partials/colors.scss';
+@import '../styles/partials/mixins.scss';
+
+.learn {
+    background-image: url('../assets/images/home-bg/brooke-lark-fANEvguCIXE-unsplash.jpg');
+    @include img-align;
+
+    &__content-container{
+        background: rgba(255, 255, 255, 0.5);
+        // mix-blend-mode: difference;
+    }
+
+    &__section-header{
+        color: #000000;
+    }
+
+    &__section-content {
+        color: #000000;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+    }
+}

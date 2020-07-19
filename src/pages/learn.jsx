@@ -1,21 +1,25 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Layout from '../components/Layout';
+import '../styles/learn.scss';
 
 export default function Test({data}) {
     return (
+      <section className="learn">
         <Layout>
-            <h1>Learn</h1>
-            <div>
+            <h1 className="learn__title">Learn</h1>
+            <div className="learn__content-container">
             {data.allMysqlPerfectblendlearnsection.edges.map(({ node }, index) => (
               <div key={node.id}>
-                <p>{node.title}</p>
-                <p>{node.description}</p>
-                <Link to={node.path} >Read more</Link>
+                <p className="learn__section-header">{node.title}</p>
+                <p className="learn__section-content">{node.description}</p>
+                <AniLink swipe direction="left" to={node.path} className="learn__link">Read more →</AniLink>
               </div>
             ))}
             </div>
         </Layout>
+      </section>
     )
 }
 
