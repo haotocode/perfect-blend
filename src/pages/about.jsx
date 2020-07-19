@@ -7,11 +7,12 @@ import '../styles/about.scss';
 export default function About() {
     return (
         <Layout>
-            <Typed 
-            className="about"
-            strings={['hello world']}
-            typeSpeed={100}
-            />
+            <div className="about">
+                <Typed 
+                strings={['hello world']}
+                typeSpeed={100}
+                />
+            </div>
             <h1>About</h1>
             <p>bio here</p>
         </Layout>
