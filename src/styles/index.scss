@@ -2,6 +2,9 @@
 @import '../styles/partials/mixins.scss';
 
 .home {
+    height: 100vh;
+    @include img-align;
+
     &__title{
         @include raleway-extra-bold;
         font-size: 40px;
