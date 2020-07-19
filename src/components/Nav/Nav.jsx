@@ -6,13 +6,13 @@ import './Nav.scss';
 export default function Nav() {
     return (
         <nav className="nav">
-            <AniLink fade className="nav__link" to='/about'>About</AniLink>
-            {/* <Link className="nav__link" to='/learn'>Learn</Link>
-            <Link className="nav__link" to='/method'>Method</Link>
-            <Link className="nav__link" to='/explore'>Explore</Link>
-            <Link className="nav__link" to='/shop'>Shop</Link>
-            <Link className="nav__link" to='/blog'>Blog</Link>
-            <Link className="nav__link" to='/contactus'>Contact</Link> */}
+            <AniLink swipe direction="left" className="nav__link" to='/about'>About</AniLink>
+            <AniLink swipe direction="left" className="nav__link" to='/learn'>Learn</AniLink>
+            <AniLink swipe direction="left" className="nav__link" to='/method'>Method</AniLink>
+            <AniLink swipe direction="left" className="nav__link" to='/explore'>Explore</AniLink>
+            <AniLink swipe direction="left" className="nav__link" to='/shop'>Shop</AniLink>
+            <AniLink swipe direction="left" className="nav__link" to='/blog'>Blog</AniLink>
+            <AniLink swipe direction="left" className="nav__link" to='/contactus'>Contact</AniLink>
       </nav>
     )
 }
