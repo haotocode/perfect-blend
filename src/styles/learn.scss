@@ -3,7 +3,11 @@
 
 .learn {
     background-image: url('../assets/images/home-bg/brooke-lark-fANEvguCIXE-unsplash.jpg');
-    @include img-align;
+    // @include img-align;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &__content-container{
         background: rgba(255, 255, 255, 0.5);
