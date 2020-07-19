@@ -1,8 +1,16 @@
+@import '../../styles/partials/mixins.scss';
+
+
 .nav {
     display: flex;
     flex-direction: column;
+    width: 300px;
 
     &__link {
         text-decoration: none;
+        color: black;
+        @include raleway-regular;
+        font-size: 50px;
+        margin: 5% 0;
     }
 }

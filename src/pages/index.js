@@ -1,7 +1,9 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import BackgroundSlider from 'react-background-slider';
 import '../styles/index.scss';
+import DownArrow from '../assets/images/icons/down-arrow.svg'
 import Image1 from '../assets/images/home-bg/bg1.jpg'
 import Image2 from '../assets/images/home-bg/bg2.jpg'
 import Image3 from '../assets/images/home-bg/bg3.jpg'
@@ -19,7 +21,9 @@ const Home = ({data}) => {
       />
       <div>
         <p className="home__title">{data.site.siteMetadata.title}</p>
-        <Link to="/main" className="home__link">Continue</Link>
+        <AniLink swipe direction="up" to="/main" className="home__link arrow bounce">
+          <img src={DownArrow} alt="down arrow"/>
+        </AniLink>
       </div>
     </div>
   )
