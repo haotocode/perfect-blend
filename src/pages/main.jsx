@@ -8,9 +8,10 @@ function Main() {
     return (
         <div className="homepage">
             <Layout>
-                <Tilt className="Tilt" options={{ max : 25, scale: 1}}  style={{ height: 100, width: 100 }}>
+                {/* <Tilt className="Tilt" options={{ max : 25, scale: 1}}  style={{ height: 100, width: 100 }}> */}
+                    <h1>Hi</h1>
                     <Nav/>
-                </Tilt>
+                {/* </Tilt> */}
             </Layout>
         </div>
     )
