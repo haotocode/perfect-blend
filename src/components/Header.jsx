@@ -1,6 +1,6 @@
 import React from 'react';
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-import '../styles/header.scss'
+import '../styles/header.scss';
 // import './Header.module.scss'
 // import HeaderStyles from './Header.module.scss';
 
