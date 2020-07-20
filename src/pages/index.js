@@ -19,12 +19,12 @@ const Home = ({data}) => {
       images={[Image1, Image2, Image3, Image4, Image5, Image6]}
       duration={15} transition={5}
       />
-      <div>
+      <div className="home__title-container">
         <p className="home__title">{data.site.siteMetadata.title}</p>
-        <AniLink swipe direction="up" to="/main" className="home__link arrow bounce">
-          <img src={DownArrow} alt="down arrow"/>
-        </AniLink>
       </div>
+      <AniLink swipe direction="down" to="/main" className="home__link arrow bounce">
+        <img src={DownArrow} alt="down arrow"/>
+      </AniLink>
     </div>
   )
 }

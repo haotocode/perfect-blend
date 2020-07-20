@@ -1,10 +1,15 @@
 @import '../styles/partials/mixins.scss';
 
 .header {
+    display: flex;
+    justify-content: flex-end;
+
     &__link {
         text-decoration: none;
+        -webkit-text-stroke: 0.7px black;
+        -webkit-text-fill-color: white;
         // font-family: "Raleway-ThinItalic";
-        @include raleway-bold
-        font-size: 40px;
+        @include raleway-bold;
+        font-size: 20px;
     }
 }

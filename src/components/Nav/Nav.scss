@@ -4,13 +4,14 @@
 .nav {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 200px;
+    margin-top: 10%;
 
     &__link {
         text-decoration: none;
         color: black;
         @include raleway-regular;
-        font-size: 50px;
+        font-size: 30px;
         margin: 5% 0;
     }
 }
