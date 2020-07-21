@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="header__nav-container">
-                <Nav/>
+                <Nav pageWrapId={"page-wrap"} outerContainerId={"App"}/>
             </div>
             <AniLink paintDrip duration={1} to="/" className="header__link">PERFECT BLEND</AniLink>
         </header>
