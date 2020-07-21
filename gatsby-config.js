@@ -105,6 +105,11 @@ module.exports = {
             idFieldName: 'id',
             name: 'perfectblendlearnsection'
           },
+          {
+            statement: 'SELECT * FROM perfectblendmainquotessection',
+            idFieldName: 'quote-id',
+            name: 'perfectblendmainquotessection'
+          },
           // {
           //   statement: 'SELECT * FROM testimportcoffee',
           //   idFieldName: 'id',
