@@ -9,8 +9,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    &__title {
+        @include raleway-bold;
+        font-size: 30px;
+    }
+
     &__content-container{
         background: rgba(255, 255, 255, 0.5);
+        margin: 10% 0%;
         // mix-blend-mode: difference;
     }
 

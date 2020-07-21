@@ -8,8 +8,8 @@ export default function Test({data}) {
     return (
       <section className="learn">
         <Layout>
-            <h1 className="learn__title">Learn</h1>
             <div className="learn__content-container">
+            <h1 className="learn__title">Learn</h1>
             {data.allMysqlPerfectblendlearnsection.edges.map(({ node }, index) => (
               <div key={node.id}>
                 <p className="learn__section-header">{node.title}</p>

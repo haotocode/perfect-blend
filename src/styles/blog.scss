@@ -2,15 +2,39 @@
 @import '../styles/partials/mixins.scss';
 
 .blog {
-    background-image: url(../assets/images/home-bg/brooke-lark-fANEvguCIXE-unsplash.jpg);
-    @include img-align;
+    background-image: url(../assets/images/home-bg/glen-carrie-EhUH4OVjsdc-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 
     &__main-section{
-        margin-top: 10%;
+        margin: 10% 0%;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    &__header-title{
+        @include raleway-bold;
+        font-size: 30px;
+    }
+
+    &__titles {
+        @include raleway-medium;
+        margin: 0;
     }
 
     &__links {
         text-decoration: none;
         color: black;
     }
+
+    &__date {
+        @include raleway-light;
+    }
+    
+    &__excerpt {
+        @include raleway-regular;
+    }
+
 }

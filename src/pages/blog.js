@@ -14,9 +14,10 @@ const BlogIndex = ({ data, location }) => {
   return (
     <section className="blog">
       <Layout location={location} title={siteTitle}>
-        <div className="blog__main-section">          
-          <SEO title="All posts" />
-          <Bio />
+        <div className="blog__main-section">
+          <h1 className="blog__header-title">Blog</h1>          
+          {/* <SEO title="All posts" />
+          <Bio /> */}
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
@@ -32,7 +33,7 @@ const BlogIndex = ({ data, location }) => {
                       {title}
                     </AniLink>
                   </h3>
-                  <small>{node.frontmatter.date}</small>
+                  <p className="blog__date">{node.frontmatter.date}</p>
                 </header>
                 <section>
                   <p 

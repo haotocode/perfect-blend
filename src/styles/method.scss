@@ -1,4 +1,15 @@
 .method {
+    background-image: url(../assets/images/home-bg/bg7.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__content-container {
+        background: rgba(255, 255, 255, 0.5);
+        margin: 10% 0%;
+    }
+
     &__next-arrow {
         height: 50px;
         width: 50px;

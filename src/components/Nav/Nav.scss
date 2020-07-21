@@ -9,7 +9,8 @@
     // margin-top: 10%;
 
     &__menu-wrap{
-        position: fixed;
+        // turn on position fixed for static menu follow scroll
+        // position: fixed;
         top: 0;
         left: 0;
         z-index: 1;

@@ -1,16 +1,18 @@
 @import '../styles/partials/colors.scss';
 @import '../styles/partials/mixins.scss';
 
-.about {
-    background-image: url('../assets/images/home-bg/bg7.jpg');
-    @include img-align;
-
+.contact {
     &__content-container {
         margin: 10% 0%;
+        background: rgba(255, 255, 255, 0.5);
     }
 
-    &__title {
+    &__header-title {
         @include raleway-bold;
-        font-size: 30px;    
+        font-size: 30px;
+    }
+
+    &__content {
+        @include raleway-regular;
     }
 }
