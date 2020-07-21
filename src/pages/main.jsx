@@ -6,7 +6,9 @@ function Main() {
     return (
         <div className="homepage">
             <Layout>
-                <p>render catchy quotes here about coffee or exploration</p>
+                <div className="homepage__hero-text-container">
+                    <p className="homepage__hero-text">render catchy quotes here about coffee or exploration</p>
+                </div>
             </Layout>
         </div>
     )

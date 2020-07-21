@@ -51,7 +51,7 @@
         transition: all 0.4s ease;
     }
 
-    &__hamburger >div::before, &__hamburger > div::after {
+    &__hamburger >div:before, &__hamburger > div:after {
         content: '';
         position: absolute;
         z-index: 1;
@@ -61,7 +61,7 @@
         background: inherit;
     }
 
-    &__hamburger > div::after {
+    &__hamburger > div:after {
         top: 10px;
     }
     
@@ -73,7 +73,7 @@
 
     // turn lines into X 
 
-    &__toggler:checked + &__hamburger > div::before, &__toggler:checked + &__hamburger > div::after{
+    &__toggler:checked + &__hamburger > div:before, &__toggler:checked + &__hamburger > div:after{
         top: 0;
         transform: rotate(90deg);
     }
@@ -105,7 +105,10 @@
         top: 0;
         left: 0;
         width: 100%;
+        margin: 0 auto;
+        // very crucial height, chances where the nav bar pops up
         height: 100%;
+
         visibility: hidden;
         overflow: hidden;
         display: flex;

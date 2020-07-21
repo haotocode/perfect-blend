@@ -2,13 +2,17 @@
 @import '../styles/partials/mixins.scss';
 
 .homepage {
-    // background-color: $primary3;
-    // background-image: linear-gradient($dark-accent2,$light-accent2, $light-shades2);
-    // background-color: $primary4;
     background-image: url('../assets/images/home-bg/bg7.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    &__hero-text-container {
+        margin: 10% 0%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+    }
 
 }

@@ -6,6 +6,11 @@
     @include img-align;
 
     &__content-container {
-        margin: 5% 0%;
+        margin: 10% 0%;
+    }
+
+    &__title {
+        @include raleway-bold;
+        font-size: 24px;
     }
 }
