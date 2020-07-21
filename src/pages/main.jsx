@@ -2,7 +2,7 @@ import React from 'react'
 import Tilt from 'react-tilt';
 import '../styles/main.scss';
 import Layout from '../components/Layout';
-import Nav from '../components/Nav/Nav';
+// import Nav from '../components/Nav/Nav';
 import KommunicateChat from '../components/Chat';
 
 function Main() {
@@ -10,7 +10,7 @@ function Main() {
         <div className="homepage">
             <Layout>
                 <Tilt className="Tilt" options={{ max : 25, scale: 1}}  style={{ height: 100, width: 100 }}>
-                    <Nav/>
+                    {/* <Nav/> */}
                 </Tilt>
                 <KommunicateChat/>
             </Layout>

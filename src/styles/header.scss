@@ -2,7 +2,13 @@
 
 .header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+
+    // &__nav-container {
+    //     background-color: black;
+    //     height: 100px;
+    //     width: 100px;
+    // }
 
     &__link {
         text-decoration: none;

@@ -1,18 +1,45 @@
-import React from 'react'
+import React, {useState} from 'react'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-// import {Link} from 'gatsby';
+import styled, {createGlobalStyle} from "styled-components";
 import './Nav.scss';
+
+
+// export default function Nav() {
+//     return (
+//         <nav className="nav">
+//             <AniLink swipe direction="left" className="nav__link" to='/about'>About</AniLink>
+//             <AniLink swipe direction="left" className="nav__link" to='/learn'>Learn</AniLink>
+//             <AniLink swipe direction="left" className="nav__link" to='/method'>Method</AniLink>
+//             <AniLink swipe direction="left" className="nav__link" to='/explore'>Explore</AniLink>
+//             <AniLink swipe direction="left" className="nav__link" to='/shop'>Shop</AniLink>
+//             <AniLink swipe direction="left" className="nav__link" to='/blog'>Blog</AniLink>
+//             <AniLink swipe direction="left" className="nav__link" to='/contactus'>Contact</AniLink>
+//       </nav>
+//     )
+// }
 
 export default function Nav() {
     return (
-        <nav className="nav">
-            <AniLink swipe direction="left" className="nav__link" to='/about'>About</AniLink>
+        <nav className="nav__menu-wrap">
+            <input type="checkbox" className="nav__toggler"/>
+            <div className="nav__hamburger"><div className="nav__hamburger-inner"></div></div>
+            <div className="nav__menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li className="nav__menu-link"><AniLink swipe direction="left" className="nav__link" to='/about'>About</AniLink></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            {/* <AniLink swipe direction="left" className="nav__link" to='/about'>About</AniLink>
             <AniLink swipe direction="left" className="nav__link" to='/learn'>Learn</AniLink>
             <AniLink swipe direction="left" className="nav__link" to='/method'>Method</AniLink>
             <AniLink swipe direction="left" className="nav__link" to='/explore'>Explore</AniLink>
             <AniLink swipe direction="left" className="nav__link" to='/shop'>Shop</AniLink>
             <AniLink swipe direction="left" className="nav__link" to='/blog'>Blog</AniLink>
-            <AniLink swipe direction="left" className="nav__link" to='/contactus'>Contact</AniLink>
+            <AniLink swipe direction="left" className="nav__link" to='/contactus'>Contact</AniLink> */}
       </nav>
     )
 }
