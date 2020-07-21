@@ -13,13 +13,13 @@ export default function Nav() {
                 <div>
                     <div>
                         <ul>
-                            <li className="nav__menu-link"><AniLink swipe direction="left" className="nav__link" to='/about'>About</AniLink></li>
-                            <li className="nav__menu-link"><AniLink swipe direction="left" className="nav__link" to='/learn'>Learn</AniLink></li>
-                            <li className="nav__menu-link"><AniLink swipe direction="left" className="nav__link" to='/method'>Method</AniLink></li>
-                            <li className="nav__menu-link"><AniLink swipe direction="left" className="nav__link" to='/explore'>Explore</AniLink></li>
-                            <li className="nav__menu-link"> <AniLink swipe direction="left" className="nav__link" to='/shop'>Shop</AniLink></li>
-                            <li className="nav__menu-link"><AniLink swipe direction="left" className="nav__link" to='/blog'>Blog</AniLink></li>
-                            <li className="nav__menu-link"><AniLink swipe direction="left" className="nav__link" to='/contactus'>Contact</AniLink></li>
+                            <li className="nav__menu-link"><AniLink className="nav__link" to='/about'>About</AniLink></li>
+                            <li className="nav__menu-link"><AniLink className="nav__link" to='/learn'>Learn</AniLink></li>
+                            <li className="nav__menu-link"><AniLink className="nav__link" to='/method'>Method</AniLink></li>
+                            <li className="nav__menu-link"><AniLink className="nav__link" to='/explore'>Explore</AniLink></li>
+                            <li className="nav__menu-link"> <AniLink className="nav__link" to='/shop'>Shop</AniLink></li>
+                            <li className="nav__menu-link"><AniLink className="nav__link" to='/blog'>Blog</AniLink></li>
+                            <li className="nav__menu-link"><AniLink className="nav__link" to='/contactus'>Contact</AniLink></li>
                         </ul>
                     </div>
                 </div>
