@@ -1,0 +1,16 @@
+@import '../styles/partials/colors.scss';
+@import '../styles/partials/mixins.scss';
+
+.blog {
+    background-image: url(../assets/images/home-bg/brooke-lark-fANEvguCIXE-unsplash.jpg);
+    @include img-align;
+
+    &__main-section{
+        margin-top: 10%;
+    }
+
+    &__links {
+        text-decoration: none;
+        color: black;
+    }
+}
