@@ -1,5 +1,7 @@
 import React from 'react';
 import { graphql } from "gatsby";
+import Typist from 'react-typist';
+
 import '../styles/main.scss';
 import Layout from '../components/Layout';
 
@@ -17,8 +19,15 @@ function Main({data}) {
         <div className="homepage">
             <Layout>
                 <div className="homepage__hero-text-container">
-                    <p className="homepage__hero-quote">{randomIndex.node.quote_content}</p>
-                    <p className="homepage__hero-quote-person">- {randomIndex.node.quote_person}</p>
+                    <Typist avgTypingDelay={40} cursor={{ hideWhenDone: true, hideWhenDoneDelay: 400 }}>
+                        <span className="homepage__quote">
+                            {randomIndex.node.quote_content}
+                        </span>
+                        <br />
+                        <span className="homepage__quote-person">
+                            - {randomIndex.node.quote_person}
+                        </span>
+                    </Typist>
                 </div>
             </Layout>
         </div>
