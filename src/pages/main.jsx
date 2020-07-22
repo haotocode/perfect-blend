@@ -16,15 +16,15 @@ function Main({data}) {
     console.log(randomIndex);
     
     return (
-        <div className="homepage">
+        <div className="main">
             <Layout>
-                <div className="homepage__hero-text-container">
+                <div className="main__hero-text-container">
                     <Typist avgTypingDelay={40} cursor={{ hideWhenDone: true, hideWhenDoneDelay: 400 }}>
-                        <span className="homepage__quote">
+                        <span className="main__quote">
                             {randomIndex.node.quote_content}
                         </span>
                         <br />
-                        <span className="homepage__quote-person">
+                        <span className="main__quote-person">
                             - {randomIndex.node.quote_person}
                         </span>
                     </Typist>

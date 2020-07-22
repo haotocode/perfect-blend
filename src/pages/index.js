@@ -13,6 +13,10 @@ import Image6 from '../assets/images/home-bg/bg6.jpg'
 
 const Home = ({data}) => {
 
+  const imageArray = [Image1, Image2, Image3, Image4, Image5, Image6]
+ 
+  // randomize array here
+
   return (
     <div className="home">
       <BackgroundSlider
