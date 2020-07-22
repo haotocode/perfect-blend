@@ -16,24 +16,34 @@ export default class FormSugarNoSugar extends Component {
 
         return (
             <div className="sugarnosugar">
-                <p className="brewpref__question">How do you take your coffee? </p>
-                <span>selection one:</span>
-                <form action="">
-                    <label>Black</label>
-                    <input type="checkbox" onChange = {handleChange('sugarnosugar')}
-                    defaultValue={values.sugarnosugar} checked = {this.props.isChecked} value="Black"/>
-                    <label>Cream</label>
-                    <input type="checkbox" onChange = {handleChange('sugarnosugar')}
-                    defaultValue={values.sugarnosugar} checked = {this.props.isChecked} value="Cream"/>
-                    <label>Sugar</label>
-                    <input type="checkbox" onChange = {handleChange('sugarnosugar')}
-                    defaultValue={values.sugarnosugar} checked = {this.props.isChecked} value="Sugar"/>
-                    <label>Decaf</label>
-                    <input type="checkbox" onChange = {handleChange('sugarnosugar')}
-                    defaultValue={values.sugarnosugar} checked = {this.props.isChecked} value="Decaf"/>
+                <p className="sugarnosugar__question">How do you take your coffee? </p>
+                <span className="sugarnosugar__select-condition">selection one:</span>
+                <form action="" className="sugarnosugar__form">
+                    <div className="sugarnosugar__option-container">
+                        <input type="checkbox" onChange = {handleChange('sugarnosugar')}
+                        defaultValue={values.sugarnosugar} checked = {this.props.isChecked} value="Black"/>
+                        <label className="sugarnosugar__label">Black</label>
+                    </div>
+                    <div className="sugarnosugar__option-container">
+                        <input type="checkbox" onChange = {handleChange('sugarnosugar')}
+                        defaultValue={values.sugarnosugar} checked = {this.props.isChecked} value="Cream"/>
+                        <label className="sugarnosugar__label">Cream</label>
+                    </div>
+                    <div className="sugarnosugar__option-container">
+                        <input type="checkbox" onChange = {handleChange('sugarnosugar')}
+                        defaultValue={values.sugarnosugar} checked = {this.props.isChecked} value="Sugar"/>
+                        <label className="sugarnosugar__label">Sugar</label>
+                    </div>
+                    <div className="sugarnosugar__option-container">
+                        <input type="checkbox" onChange = {handleChange('sugarnosugar')}
+                        defaultValue={values.sugarnosugar} checked = {this.props.isChecked} value="Decaf"/>
+                        <label className="sugarnosugar__label">Decaf</label>
+                    </div>
                 </form>
-                <button onClick={this.continue}>Next</button>
-                <button onClick={this.back}>Back</button>
+                <div className="sugarnosugar__btn-container">
+                    <button className="sugarnosugar__btn" onClick={this.back}>← Back</button>
+                    <button className="sugarnosugar__btn" onClick={this.continue}>Next →</button>
+                </div>
 
             </div>
         )
