@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './FormCoffeeColor.scss';
 
 export default class FormCoffeeColor extends Component {
 
@@ -15,22 +16,20 @@ export default class FormCoffeeColor extends Component {
         const {values, handleChange, toggleChange, coffeecolor} = this.props;
 
         return (
-            <div>
-                <p>How light or dark do you like your coffee?? </p>
-                <form action="">
-                    {/* <label>Light</label> */}
-                    {/* <input type="checkbox" onChange = {handleChange('coffeecolor')}
-                    defaultValue={values.coffeecolor} change={toggleChange} value="Light"/> */}
-                    {/* <br/> */}
-                    <label>Light</label>
-                    <input type="range" min="0" max="5" onChange={handleChange('coffeecolor')} defaultValue={values.coffeecolor} change={toggleChange} />
-                    {/* <input type="range" min="0" max="5"onChange={handleChange('coffeecolor')}
-                    defaultValue={values.coffeecolor} change={toggleChange} value="Light" /> */}
-                    <label>Dark</label>
+            <div className="coffeecolor">
+                <p className="coffeecolor__question">How light or dark do you like your coffee?</p>
+                <span className="coffeecolor__select-condition">Use slider:</span>
+                <form action="" className="coffeecolor__form">
+                    <div className="coffeecolor__option-container">
+                        <label>Light</label>
+                        <input type="range" min="0" max="5" onChange={handleChange('coffeecolor')} defaultValue={values.coffeecolor} change={toggleChange} />
+                        <label>Dark</label>
+                    </div>
                 </form>
-                <button onClick={this.continue}>Next</button>
-                <button onClick={this.back}>Back</button>
-
+                <div className="coffeecolor__btn-container">
+                    <button className="coffeecolor__btn" onClick={this.back}>← Back</button>
+                    <button className="coffeecolor__btn" onClick={this.continue}>Next →</button>
+                </div>
             </div>
         )
     }
