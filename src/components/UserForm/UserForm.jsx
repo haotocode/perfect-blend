@@ -6,6 +6,7 @@ import FormFlavourPref from '../FormFlavourPref/FormFlavourPref';
 import FormFlavourSpices from '../FormFlavourSpices/FormFlavourSpices';
 import Confirm from '../Confirm/Confirm';
 import Recommendation from '../Recommendation/Recommendation';
+import './UserForm.scss';
 
 export class UserForm extends Component {
     state = {

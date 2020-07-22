@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './FormSugarNoSugar.scss';
 
 export default class FormSugarNoSugar extends Component {
 
@@ -14,8 +15,9 @@ export default class FormSugarNoSugar extends Component {
         const {values, handleChange, toggleChange, sugarnosugar} = this.props;
 
         return (
-            <div>
-                <p>How do you take your coffee? </p>
+            <div className="sugarnosugar">
+                <p className="brewpref__question">How do you take your coffee? </p>
+                <span>selection one:</span>
                 <form action="">
                     <label>Black</label>
                     <input type="checkbox" onChange = {handleChange('sugarnosugar')}
