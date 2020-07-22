@@ -129,6 +129,7 @@ export class UserForm extends Component {
                     coffeecolor ={coffeecolor}
                     // coffeecolor = {this.coffeecolor}
                     values={values} 
+                    coffeecolor = {this.state.coffeecolor}
                     handleChange = {this.handleChange}
                     toggleChange = {this.toggleChange}
                     checked = {this.state.isChecked}
@@ -187,7 +188,7 @@ export class UserForm extends Component {
         }
         return (
             <div>
-                Hi
+                
             </div>
         )
     }

@@ -8,6 +8,35 @@
         @include raleway-regular;
     }
 
+    &__value-container {
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__value-example{
+        width: 60px;
+        height: 30px;
+        margin-left: 4%;
+
+        &--bg1{
+            background-color: #F5E2C1;
+        }
+
+        &--bg2{
+            background-color: #DBC1AC;
+        }
+        &--bg3{
+            background-color: #967259;
+        }
+        &--bg4{
+            background-color: #634832;
+        }
+        &--bg5{
+            background-color: #38220F;
+        }
+    }
+
     &__select-condition {
         @include raleway-light;
     }
