@@ -1,0 +1,28 @@
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/colors.scss';
+
+.confirm {
+    &__title{
+        @include raleway-regular;
+    }
+
+    &__question{
+        @include raleway-light;
+        margin: 0;
+    }
+
+    &__answer{
+        @include raleway-extra-light;
+    }
+
+    &__btn-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        @include form-btn-mobile;
+    }
+
+}

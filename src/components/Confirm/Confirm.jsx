@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './Confirm.scss';
 
 export default class Confirm extends Component {
     continue = e => {
@@ -12,33 +13,35 @@ export default class Confirm extends Component {
     }
 
     render() {
-        const {values : {firstName, lastName, email, occupation, city, bio, value}} = this.props;
+        // const {values : {firstName, lastName, email, occupation, city, bio, value}} = this.props;
         const {brewpref, sugarnosugar, coffeecolor, flavourpref, flavourspice} = this.props;
         return (
-            <div>
-                <h1>CONFIRMATION</h1>
-                <div>
-                    <p>Brew preference: </p>
-                    <p>{brewpref}</p>
+            <div className="confirm">
+                <p className="confirm__title">Confirmation of your answers:</p>
+                <div className="confirm__question-container">
+                    <p className="confirm__question">Brew preference</p>
+                    <p className="confirm__answer">{brewpref}</p>
                 </div>
-                <div>
-                    <p>Sugar no sugar:</p>
-                    <p>{sugarnosugar}</p>
+                <div className="confirm__question-container">
+                    <p className="confirm__question">Sugar no sugar</p>
+                    <p className="confirm__answer">{sugarnosugar}</p>
                 </div>
-                <div>
-                    <p>Coffee Color</p>
-                    <p>{coffeecolor}</p>
+                <div className="confirm__question-container">
+                    <p className="confirm__question">Coffee Color</p>
+                    <p className="confirm__answer">{coffeecolor}</p>
                 </div>
-                <div>
-                    <p>Flavour Preference</p>
-                    <p>{flavourpref}</p>
+                <div className="confirm__question-container">
+                    <p className="confirm__question">Flavour Preference</p>
+                    <p className="confirm__answer">{flavourpref}</p>
                 </div>
-                <div>
-                    <p>Flavour Spice</p>
-                    <p>{flavourspice}</p>
+                <div className="confirm__question-container">
+                    <p className="confirm__question">Flavour Spice</p>
+                    <p className="confirm__answer">{flavourspice}</p>
                 </div>
-                <button onClick={this.continue}>Next</button>
-                <button onClick={this.back}>Back</button>
+                <div className="confirm__btn-container">
+                    <button className="confirm__btn" onClick={this.back}>← Back</button>
+                    <button className="confirm__btn" onClick={this.continue}>Next →</button>
+                </div>
                 
             </div>
         )

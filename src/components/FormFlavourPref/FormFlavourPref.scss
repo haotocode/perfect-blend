@@ -1,0 +1,39 @@
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/colors.scss';
+
+.flavourpref {
+    margin: 15% 0%;
+
+    &__question{
+        @include raleway-regular;
+    }
+
+    &__select-condition {
+        @include raleway-light;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__option-container{
+        display: flex;
+        align-items: center;
+    }
+
+    &__label {
+        margin-left: 10%;
+        @include raleway-regular;
+    }
+
+    &__btn-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        @include form-btn-mobile;
+    }
+}
