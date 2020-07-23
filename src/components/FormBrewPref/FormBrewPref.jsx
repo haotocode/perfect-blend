@@ -11,7 +11,7 @@ export default class FormBrewPref extends Component {
 
     render() {
 
-        const {values, handleChange, toggleChange, brewpref, step} = this.props;
+        const {values, handleChange, toggleChange, brewpref, step, checked} = this.props;
 
         return (
             <div className="brewpref">
@@ -20,9 +20,13 @@ export default class FormBrewPref extends Component {
                 <span className="brewpref__select-condition">select one: </span>
                 <form action="" className="brewpref__form">
                     <div className="brewpref__option-container">
-                        <input type="checkbox" onChange = {handleChange('brewpref')} defaultValue={values.brewpref} checked = {this.props.isChecked} value="Drip"/>
+                        <input type="checkbox" onChange = {handleChange('brewpref')} checked = {this.props.isChecked} value="Drip"/>
                         <label className="brewpref__label">Drip</label>
                     </div>
+                    {/* <div className="brewpref__option-container">
+                        <input type="checkbox" onChange = {handleChange('brewpref')} defaultValue={values.brewpref} checked = {this.props.isChecked} value="Drip"/>
+                        <label className="brewpref__label">Drip</label>
+                    </div> */}
                     <div className="brewpref__option-container">
                         <input type="checkbox" onChange = {handleChange('brewpref')} defaultValue={values.brewpref} checked = {this.props.isChecked} value="French Press"/>
                         <label className="brewpref__label">French Press</label>

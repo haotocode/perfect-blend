@@ -26,7 +26,7 @@ export class UserForm extends Component {
             value: "",
         },
         coffeecolor: {
-            value: "",
+            value: "hi",
         },
         // coffeecolor: "",
         flavourpref: {

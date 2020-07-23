@@ -7,13 +7,13 @@ import Layout from '../components/Layout';
 
 function Main({data}) {
 
-    console.log(data.allMysqlPerfectblendmainquotessection.edges);
+    // console.log(data.allMysqlPerfectblendmainquotessection.edges);
 
    const index = data.allMysqlPerfectblendmainquotessection.edges;
-   console.log(index)
+//    console.log(index)
 
     const randomIndex = index[Math.floor(Math.random() * index.length)];
-    console.log(randomIndex);
+    // console.log(randomIndex);
     
     return (
         <div className="main">

@@ -51,6 +51,10 @@
         align-items: center;
     }
 
+    &__input-range{
+        margin: 0% 3%;
+    }
+
     &__label {
         margin-left: 10%;
         @include raleway-regular;

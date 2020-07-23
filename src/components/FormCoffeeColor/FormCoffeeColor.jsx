@@ -44,12 +44,20 @@ export default class FormCoffeeColor extends Component {
                 <span className="coffeecolor__select-condition">Use slider:</span>
                 <form action="" className="coffeecolor__form">
                     <div className="coffeecolor__option-container">
-                        <label>Light</label>
-                        <input type="range" min="0" max="5" onChange={handleChange('coffeecolor')} defaultValue={values.coffeecolor} change={toggleChange} />
-                        <label>Dark</label>
+                        <label>1</label>
+                        <input className="coffeecolor__input-range" type="range" min="1" max="5" onChange={handleChange('coffeecolor')} defaultValue={values.coffeecolor} change={toggleChange} list='tick-list'/>
+                        <label>5</label>
+                        <datalist id="tick-list">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </datalist>
                     </div>
-                    {/* <p>Current value: {coffeecolor}</p> */}
                 </form>
+                {/* <p>{coffeecolor.value}</p> */}
+                {/* <p>Current value: {coffeecolor}</p> */}
                 <div className="coffeecolor__btn-container">
                     <button className="coffeecolor__btn" onClick={this.back}>← Back</button>
                     <button className="coffeecolor__btn" onClick={this.continue}>Next →</button>
