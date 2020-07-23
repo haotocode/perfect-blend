@@ -13,9 +13,10 @@ export default class FormFlavourPref extends Component {
     }
 
     render() {
-        const {values, handleChange, toggleChange, flavourpref} = this.props;
+        const {values, handleChange, toggleChange, flavourpref, step} = this.props;
         return (
             <div className="flavourpref">
+                 <span>{step} of 5</span>
                  <p className="flavourpref__question">How light or dark do you like your coffee?</p>
                  <span className="flavourpref__select-condition">selection one:</span>
                  <form action="">

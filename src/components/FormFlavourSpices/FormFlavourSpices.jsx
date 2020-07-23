@@ -13,10 +13,11 @@ export default class FormFlavourSpices extends Component {
     }
 
     render() {
-        const {values, handleChange, toggleChange, flavourspice} = this.props;
+        const {values, handleChange, toggleChange, flavourspice, step} = this.props;
 
         return (
             <div className="flavourspice">
+                <span>{step} of 5</span>
                 <p className="flavourspice__question">Which herb or spice are you most drawn to?</p>
                 <span className="flavourspice__select-condition">selection one:</span>
                  <form action="">

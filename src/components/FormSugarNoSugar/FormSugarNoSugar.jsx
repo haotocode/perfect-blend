@@ -12,10 +12,11 @@ export default class FormSugarNoSugar extends Component {
         this.props.prevStep();
     }
     render() {
-        const {values, handleChange, toggleChange, sugarnosugar} = this.props;
+        const {values, handleChange, toggleChange, sugarnosugar, step} = this.props;
 
         return (
             <div className="sugarnosugar">
+                <span>{step} of 5</span>
                 <p className="sugarnosugar__question">How do you take your coffee? </p>
                 <span className="sugarnosugar__select-condition">selection one:</span>
                 <form action="" className="sugarnosugar__form">

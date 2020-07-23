@@ -13,10 +13,11 @@ export default class FormCoffeeColor extends Component {
     }
 
     render() {
-        const {values, handleChange, toggleChange, coffeecolor} = this.props;
+        const {values, handleChange, toggleChange, coffeecolor, step} = this.props;
 
         return (
             <div className="coffeecolor">
+                <span>{step} of 5</span>
                 <p className="coffeecolor__question">How light or dark do you like your coffee?</p>
                 <div className="coffecolor__option-bg-container">
                     <div className="coffeecolor__value-container">
@@ -47,7 +48,7 @@ export default class FormCoffeeColor extends Component {
                         <input type="range" min="0" max="5" onChange={handleChange('coffeecolor')} defaultValue={values.coffeecolor} change={toggleChange} />
                         <label>Dark</label>
                     </div>
-                    <p>Current value: {coffeecolor}</p>
+                    {/* <p>Current value: {coffeecolor}</p> */}
                 </form>
                 <div className="coffeecolor__btn-container">
                     <button className="coffeecolor__btn" onClick={this.back}>← Back</button>

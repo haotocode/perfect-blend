@@ -11,10 +11,11 @@ export default class FormBrewPref extends Component {
 
     render() {
 
-        const {values, handleChange, toggleChange, brewpref} = this.props;
+        const {values, handleChange, toggleChange, brewpref, step} = this.props;
 
         return (
             <div className="brewpref">
+                <span>{step} of 5</span>
                 <p className="brewpref__question">What is your brew preference?</p>
                 <span className="brewpref__select-condition">select one: </span>
                 <form action="" className="brewpref__form">

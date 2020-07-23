@@ -96,7 +96,8 @@ export class UserForm extends Component {
                     // // handleChange2={this._handleChange}
                     // checked = {this.state.isChecked}
                     // />
-                    <FormBrewPref 
+                    <FormBrewPref
+                    step={step}
                     brewpref = {brewpref}
                     values={values} 
                     handleChange = {this.handleChange}
@@ -108,6 +109,7 @@ export class UserForm extends Component {
             case 2:
                 return (
                     <FormSugarNoSugar
+                    step={step}
                     sugarnosugar ={sugarnosugar}
                     values={values} 
                     handleChange = {this.handleChange}
@@ -125,7 +127,8 @@ export class UserForm extends Component {
                     // handleChange = {this.handleChange}
                     // values={values} 
                     // />
-                    <FormCoffeeColor 
+                    <FormCoffeeColor
+                    step={step} 
                     coffeecolor ={coffeecolor}
                     // coffeecolor = {this.coffeecolor}
                     values={values} 
@@ -146,6 +149,7 @@ export class UserForm extends Component {
                     // values={values} 
                     // />
                     <FormFlavourPref
+                    step={step}
                     flavourpref={flavourpref}
                     values={values} 
                     handleChange = {this.handleChange}
@@ -158,6 +162,7 @@ export class UserForm extends Component {
             case 5:
                 return (
                     <FormFlavourSpices
+                    step={step}
                     flavourspice={flavourspice}
                     values={values} 
                     handleChange = {this.handleChange}

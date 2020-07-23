@@ -28,7 +28,7 @@ export default class Confirm extends Component {
                 </div>
                 <div className="confirm__question-container">
                     <p className="confirm__question">Coffee Color</p>
-                    <p className="confirm__answer">{coffeecolor}</p>
+                    {/* <p className="confirm__answer">{coffeecolor}</p> */}
                 </div>
                 <div className="confirm__question-container">
                     <p className="confirm__question">Flavour Preference</p>
