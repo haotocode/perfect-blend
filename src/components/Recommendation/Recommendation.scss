@@ -1,0 +1,61 @@
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/colors.scss';
+
+.recommendation {
+    width: auto;
+    margin: 0 auto;
+
+    &__card {
+        margin: 0 auto;
+        // background-color: $light-shades;
+        border: 1px solid $light-shades;
+        border-radius: 10px;
+        height: 350px;
+        // width: 230px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        &--coffee-info-container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &--coffee-title{
+            margin: 0;
+            align-self: center;
+        }
+
+        &--coffee-description {
+            margin: 0 auto;
+            width: 220px;
+        }
+
+        &--link{
+            text-decoration: none;
+            color: black;
+        }
+ 
+        &--link {
+            align-self: flex-end;
+        }
+    }
+
+    &__btn-container {
+        height: 50px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    &__btn{
+        @include form-btn-mobile;
+    }
+}
