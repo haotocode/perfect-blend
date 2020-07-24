@@ -13,6 +13,22 @@
         height: 300px;
         display: flex;
         align-items: center;
+    }   
+
+    &__quote{
+        @include raleway-regular;
+        margin: 0 auto;
     }
 
+    &__quote-person {
+        @include raleway-light;
+        align-self: flex-end;
+    }
+}
+
+.Typist {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

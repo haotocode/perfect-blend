@@ -18,8 +18,8 @@ function Main({data}) {
     return (
         <div className="main">
             <Layout>
-                <div className="main__hero-text-container">
-                    <Typist avgTypingDelay={40} cursor={{ hideWhenDone: true, hideWhenDoneDelay: 400 }}>
+                <div className="main__hero-text-container" >
+                    <Typist avgTypingDelay={40} cursor={{ hideWhenDone: true, hideWhenDoneDelay: 400, show: false }} className="Typist">
                         <span className="main__quote">
                             {randomIndex.node.quote_content}
                         </span>

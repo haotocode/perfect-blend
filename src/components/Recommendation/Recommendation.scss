@@ -7,19 +7,32 @@
 
     &__card {
         margin: 0 auto;
-        // background-color: $light-shades;
         border: 1px solid $light-shades;
         border-radius: 10px;
         height: 350px;
         // width: 230px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
+        @include desktop {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+        }
+
         &:hover{
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            @include desktop {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+        }
+
+        &--image{
+            width: 90px;
+            height: auto;
+            object-fit: contain;
+            margin: 0 auto;
+            @include img-align;
         }
 
         &--coffee-info-container{
@@ -30,19 +43,18 @@
         &--coffee-title{
             margin: 0;
             align-self: center;
+            @include raleway-regular;
         }
 
         &--coffee-description {
             margin: 0 auto;
             width: 220px;
+            @include raleway-light;
         }
 
         &--link{
             text-decoration: none;
             color: black;
-        }
- 
-        &--link {
             align-self: flex-end;
         }
     }

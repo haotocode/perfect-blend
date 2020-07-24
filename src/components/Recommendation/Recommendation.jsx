@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Typist from 'react-typist';
 import ItemsCarousel from 'react-items-carousel';
+import CoffeeReco from '../../assets/images/images/coffee-reco.png';
 import './Recommendation.scss';
 
 export default function Recommendation() {
@@ -21,26 +22,26 @@ export default function Recommendation() {
             className="recommendation__card-animation-wrapper"
             >
                 <div className="recommendation__card">
-                    <p>coffee bag image here</p>
+                    <img src={CoffeeReco} alt="generic coffee packaging image" className="recommendation__card--image"/>
                     <div className="recommendation__card--coffee-info-container">
-                        <p className="recommendation__card--coffee-title">Coffee 1</p>
-                        <p className="recommendation__card--coffee-description">some kind of description about the coffee matching the preference</p>
+                        <p className="recommendation__card--coffee-title">Coffee Blend</p>
+                        <p className="recommendation__card--coffee-description">This syrupy and sweet blend is perfect for those that like their coffee that says "coffee without sugar is no good". </p>
                     </div>
                     <AniLink className="recommendation__card--link" to='/shop'>Find Out More →</AniLink>
                 </div>
                 <div className="recommendation__card">
-                    <p>coffee bag image here</p>
+                    <img src={CoffeeReco} alt="generic coffee packaging image" className="recommendation__card--image"/>
                     <div className="recommendation__card--coffee-info-container">
-                        <p className="recommendation__card--coffee-title">Coffee 2</p>
-                        <p className="recommendation__card--coffee-description">some kind of description about the coffee matching the preference</p>
+                        <p className="recommendation__card--coffee-title">Coffee Blend</p>
+                        <p className="recommendation__card--coffee-description">This syrupy and sweet blend is perfect for those that like their coffee that says "coffee without sugar is no good".</p>
                     </div>
                     <AniLink className="recommendation__card--link" to='/shop'>Find Out More →</AniLink>
                 </div>
                 <div className="recommendation__card">
-                    <p>coffee bag image here</p>
+                    <img src={CoffeeReco} alt="generic coffee packaging image" className="recommendation__card--image"/>
                     <div className="recommendation__card--coffee-info-container">
-                        <p className="recommendation__card--coffee-title">Coffee 3</p>
-                        <p className="recommendation__card--coffee-description">some kind of description about the coffee matching the preference</p>
+                        <p className="recommendation__card--coffee-title">Coffee Blend</p>
+                        <p className="recommendation__card--coffee-description">This syrupy and sweet blend is perfect for those that like their coffee that says "coffee without sugar is no good".</p>
                     </div>
                     <AniLink className="recommendation__card--link" to='/shop'>Find Out More →</AniLink>
                 </div>

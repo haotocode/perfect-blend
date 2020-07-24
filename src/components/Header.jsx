@@ -11,7 +11,7 @@ const Header = () => {
             <div className="header__nav-container">
                 <Nav pageWrapId={"page-wrap"} outerContainerId={"App"}/>
             </div>
-            <AniLink paintDrip duration={1} to="/" className="header__link">PERFECT BLEND</AniLink>
+            <AniLink paintDrip duration={1} hex="#E0D3C3" to="/" className="header__link">PERFECT BLEND</AniLink>
         </header>
     )
 }
