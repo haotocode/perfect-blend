@@ -18,11 +18,11 @@ export default class FormCoffeeColor extends Component {
 
         return (
             <div className="coffeecolor">
-                <span>{step} of 5</span>
+                <p className="coffeecolor__step">{step} of 5</p>
                 <Typist avgTypingDelay={10} cursor={{show: false}}>
                     <p className="coffeecolor__question">How light or dark do you like your coffee?</p>
                     <Typist.Delay ms={200} />
-                <div className="coffecolor__option-bg-container">
+                <div className="coffeecolor__option-bg-container">
                     <div className="coffeecolor__value-container">
                         <span>1 =</span>
                         <div className="coffeecolor__value-example coffeecolor__value-example--bg1"></div>

@@ -17,7 +17,7 @@ export default class FormFlavourPref extends Component {
         const {values, handleChange, toggleChange, flavourpref, step} = this.props;
         return (
             <div className="flavourpref">
-                 <span>{step} of 5</span>
+                 <p className="flavourpref__step">{step} of 5</p>
                  <Typist avgTypingDelay={10} cursor={{show: false}}>
                     <p className="flavourpref__question">Which flavours do you most enjoy in your coffee?</p>
                     <Typist.Delay ms={200} />

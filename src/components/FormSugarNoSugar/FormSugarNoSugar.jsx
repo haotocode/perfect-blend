@@ -17,7 +17,7 @@ export default class FormSugarNoSugar extends Component {
 
         return (
             <div className="sugarnosugar">
-                <span>{step} of 5</span>
+                <p className="sugarnosugar__step">{step} of 5</p>
                 <Typist avgTypingDelay={10} cursor={{show: false}}>
                     <p className="sugarnosugar__question">How do you take your coffee? </p>
                     <Typist.Delay ms={200} />

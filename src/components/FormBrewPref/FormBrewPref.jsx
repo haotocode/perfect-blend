@@ -15,7 +15,7 @@ export default class FormBrewPref extends Component {
 
         return (
             <div className="brewpref">
-                <span>{step} of 5</span>
+                <p className="brewpref__step">{step} of 5</p>
                 <Typist avgTypingDelay={10} cursor={{show: false}}>
                     <p className="brewpref__question">What is your brew preference?</p>
                     <Typist.Delay ms={200} />

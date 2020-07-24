@@ -4,6 +4,11 @@
 .brewpref {
     margin: 15% 0%;
 
+    &__step {
+        @include raleway-light;
+        margin-bottom: 5%;
+    }
+
     &__question{
         @include raleway-regular;
     }

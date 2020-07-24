@@ -172,21 +172,21 @@ export class UserForm extends Component {
                     prevStep = {this.prevStep}
                     />
                 )
-            case 6: 
-                return(
-                    <Confirm 
-                    nextStep = {this.nextStep}
-                    prevStep = {this.prevStep}
-                    handleChange = {this.handleChange}
-                    brewpref = {this.state.brewpref}
-                    sugarnosugar = {this.state.sugarnosugar}
-                    coffeecolor = {this.state.coffeecolor}
-                    flavourpref = {this.state.flavourpref}
-                    flavourspice = {this.state.flavourspice}
-                    values={values}
-                    />
-                )
-            case 7:
+            // case 6: 
+            //     return(
+            //         <Confirm 
+            //         nextStep = {this.nextStep}
+            //         prevStep = {this.prevStep}
+            //         handleChange = {this.handleChange}
+            //         brewpref = {this.state.brewpref}
+            //         sugarnosugar = {this.state.sugarnosugar}
+            //         coffeecolor = {this.state.coffeecolor}
+            //         flavourpref = {this.state.flavourpref}
+            //         flavourspice = {this.state.flavourspice}
+            //         values={values}
+            //         />
+            //     )
+            case 6:
                 return (
                     <Recommendation/>
                 )        

@@ -18,7 +18,7 @@ export default class FormFlavourSpices extends Component {
 
         return (
             <div className="flavourspice">
-                <span>{step} of 5</span>
+                <p className="flavourspice__step">{step} of 5</p>
                 <Typist avgTypingDelay={10} cursor={{show: false}}>
                     <p className="flavourspice__question">Which herb or spice are you most drawn to?</p>
                     <Typist.Delay ms={200} />
