@@ -32,10 +32,10 @@
         opacity: 0;
 
         @include tablet {
-            top: unset;
+            top: 25px;
             left: unset;
-            width: unset;
-            height: unset;
+            width: 40px;
+            height: 40px;
         }
     }
 

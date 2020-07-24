@@ -25,7 +25,7 @@ export default function Recommendation() {
                     <img src={CoffeeReco} alt="generic coffee packaging image" className="recommendation__card--image"/>
                     <div className="recommendation__card--coffee-info-container">
                         <p className="recommendation__card--coffee-title">Coffee Blend</p>
-                        <p className="recommendation__card--coffee-description">This syrupy and sweet blend is perfect for those that like their coffee that says "coffee without sugar is no good". </p>
+                        <p className="recommendation__card--coffee-description">This syrupy and sweet blend is perfect for those that like their coffee that says "coffee without sugar is no good".</p>
                     </div>
                     <AniLink className="recommendation__card--link" to='/shop'>Find Out More →</AniLink>
                 </div>
@@ -47,7 +47,7 @@ export default function Recommendation() {
                 </div>
             </ItemsCarousel>
             <div className="recommendation__btn-container">
-                <AniLink to='/main' paintDrip duration={1}>
+                <AniLink to='/main' paintDrip duration={1} hex="#E0D3C3">
                     <button className="recommendation__btn">Home</button>
                 </AniLink>
             </div>

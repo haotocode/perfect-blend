@@ -4,6 +4,7 @@
 .header {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 
     @include tablet {
         height: 55px;
