@@ -4,6 +4,10 @@
 .flavourpref {
     margin: 15% 0%;
 
+    @include tablet {
+        @include tablet-padding;
+    }
+
     &__step {
         @include raleway-light;
         margin-bottom: 5%;
@@ -40,5 +44,11 @@
 
     &__btn {
         @include form-btn-mobile;
+
+        @include tablet {
+            margin-top: 5%;
+            @include form-btn-tablet;
+        }
+
     }
 }
