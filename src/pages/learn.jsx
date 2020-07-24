@@ -11,7 +11,7 @@ export default function Test({data}) {
             <div className="learn__content-container">
             <h1 className="learn__title">Learn</h1>
             {data.allMysqlPerfectblendlearnsection.edges.map(({ node }, index) => (
-              <div key={node.id}>
+              <div key={node.id} className="learn__section-container">
                 <p className="learn__section-header">{node.title}</p>
                 <p className="learn__section-content">{node.description}</p>
                 <AniLink swipe direction="left" to={node.path} className="learn__link">Read more →</AniLink>

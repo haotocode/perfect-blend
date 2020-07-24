@@ -5,11 +5,10 @@
     display: flex;
     justify-content: space-between;
 
-    // &__nav-container {
-    //     background-color: black;
-    //     height: 100px;
-    //     width: 100px;
-    // }
+    @include tablet {
+        height: 55px;
+        align-items: center;
+    }
 
     &__link {
         text-decoration: none;
@@ -17,5 +16,9 @@
         -webkit-text-fill-color: white;
         @include raleway-bold;
         font-size: 20px;
+
+        @include tablet {
+            font-size: 28px;
+        }
     }
 }

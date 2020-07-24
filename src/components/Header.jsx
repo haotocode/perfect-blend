@@ -8,9 +8,11 @@ import '../styles/header.scss';
 const Header = () => {
     return (
         <header className="header">
-            <div className="header__nav-container">
+            <Nav />
+            {/* <Nav pageWrapId={"page-wrap"} outerContainerId={"App"}/> */}
+            {/* <div className="header__nav-container">
                 <Nav pageWrapId={"page-wrap"} outerContainerId={"App"}/>
-            </div>
+            </div> */}
             <AniLink paintDrip duration={1} hex="#E0D3C3" to="/" className="header__link">PERFECT BLEND</AniLink>
         </header>
     )

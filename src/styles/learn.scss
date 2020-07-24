@@ -12,6 +12,7 @@
     &__title {
         @include raleway-bold;
         font-size: 30px;
+        padding: 0% 5%;
     }
 
     &__content-container{
@@ -20,16 +21,28 @@
         // mix-blend-mode: difference;
     }
 
+    &__section-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+        padding: 0% 5%;
+    }
+
     &__section-header{
+        @include raleway-regular;
         color: #000000;
     }
 
     &__section-content {
+        @include raleway-regular;
         color: #000000;
     }
 
     &__link {
+        @include raleway-regular;
+        font-style: italic;
         text-decoration: none;
         color: black;
+        align-self: flex-end;
     }
 }
