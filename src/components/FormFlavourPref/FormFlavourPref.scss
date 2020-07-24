@@ -8,6 +8,10 @@
         @include tablet-padding;
     }
 
+    @include desktop {
+        margin: 10% 0%;
+    }
+
     &__step {
         @include raleway-light;
         margin-bottom: 5%;
