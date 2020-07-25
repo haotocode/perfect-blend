@@ -7,4 +7,3 @@ description: There are four primary types of coffee beans.
 There are four primary types of coffee beans. 
 
 Arabic, Robusta, Liberica, and Excelsa. Each type of bean is grown in different regions of the world. Given the climate and soil, each bean has different flavour profiles.
-

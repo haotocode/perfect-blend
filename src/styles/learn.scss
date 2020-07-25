@@ -2,7 +2,7 @@
 @import '../styles/partials/mixins.scss';
 
 .learn {
-    background-image: url(../assets/images/home-bg/bg5.jpg);
+    background-image: url(../assets/images/home-bg/cup-3616873_1920.jpg);
     // @include img-align;
     background-attachment: fixed;
     background-position: center;
@@ -16,7 +16,7 @@
     }
 
     &__content-container{
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.7);
         margin: 10% 0%;
         // mix-blend-mode: difference;
     }
