@@ -1,5 +1,6 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
+
 // import { rhythm, scale } from "../utils/typography"
 
 const BlogLayout = ({ location, title, children }) => {
@@ -17,6 +18,8 @@ const BlogLayout = ({ location, title, children }) => {
       >
         <AniLink
         paintDrip duration={1}
+        hex="#E0D3C3"
+        style={{textDecoration: `none`, color: `black`}}
           // style={{
           //   boxShadow: `none`,
           //   color: `inherit`,
@@ -37,6 +40,8 @@ const BlogLayout = ({ location, title, children }) => {
       >
         <AniLink
         paintDrip duration={1}
+        hex="#E0D3C3"
+        style={{textDecoration: `none`, color: `black`}}
           // style={{
           //   boxShadow: `none`,
           //   color: `inherit`,
@@ -59,11 +64,7 @@ const BlogLayout = ({ location, title, children }) => {
     >
       <header>{header}</header>
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        {/* <a href="https://www.gatsbyjs.org">Gatsby</a> */}
-      </footer>
+
     </div>
   )
 }

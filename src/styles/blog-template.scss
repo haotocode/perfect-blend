@@ -1,0 +1,43 @@
+@import '../styles/partials/mixins.scss';
+@import '../styles/partials/colors.scss';
+
+.blog-post {
+    padding: 5% 0%;
+    @include mobile-margin;
+    height: 100vh;
+    overflow: scroll;
+
+    @include tablet {
+        @include tablet-margin;
+    }
+
+    @include desktop {
+        @include desktop-margin;
+    }
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+
+    &__post-container {
+    }
+
+    &__title-date-container {
+    }
+    
+    &__title {
+        @include raleway-semi-bold;
+    }
+
+    &__date {
+        @include raleway-regular;
+    }
+
+    &__post-content {
+        @include raleway-regular;
+    }
+
+    &__page-nav-container {
+        height: 50px;
+    }
+}
