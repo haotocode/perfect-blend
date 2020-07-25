@@ -14,8 +14,8 @@
 
     &__card {
         margin: 0 auto;
-        border: 1px solid $light-shades;
-        border-radius: 10px;
+        // border: 1px solid $light-shades;
+        // border-radius: 10px;
         height: 350px;
         // width: 230px;
         transition: 0.3s;
@@ -27,18 +27,19 @@
             height: 450px;
         }
 
-        @include desktop {
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        // @include desktop {
+        //     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
-        }
+        // }
 
-        &:hover{
-            @include desktop {
-                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-            }
-        }
+        // &:hover{
+        //     @include desktop {
+        //         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        //     }
+        // }
 
         &--image{
+            margin-top: 5%;
             width: 90px;
             height: auto;
             object-fit: contain;
@@ -46,6 +47,7 @@
             @include img-align;
 
             @include tablet {
+                margin-top: 5%;
                 width: 120px;
             }
         }
@@ -65,7 +67,7 @@
         &--coffee-title{
             margin: 0;
             align-self: center;
-            @include raleway-regular;
+            @include raleway-semi-bold;
         }
 
         &--coffee-description {
@@ -82,6 +84,7 @@
             text-decoration: none;
             color: black;
             align-self: flex-end;
+            @include raleway-extra-light;
         }
     }
 
