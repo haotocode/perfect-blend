@@ -21,7 +21,7 @@ export default class FormFlavourPref extends Component {
                  <Typist avgTypingDelay={10} cursor={{show: false}}>
                     <p className="flavourpref__question">Which flavours do you most enjoy in your coffee?</p>
                     <Typist.Delay ms={200} />
-                 <span className="flavourpref__select-condition">selection one:</span>
+                 <span className="flavourpref__select-condition">select one:</span>
                  <form action="">
                      <div className="flavourpref__option-container">
                         <input type="checkbox" onChange = {handleChange('flavourpref')}

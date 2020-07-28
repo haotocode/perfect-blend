@@ -21,7 +21,7 @@ export default class FormSugarNoSugar extends Component {
                 <Typist avgTypingDelay={10} cursor={{show: false}}>
                     <p className="sugarnosugar__question">How do you take your coffee? </p>
                     <Typist.Delay ms={200} />
-                <span className="sugarnosugar__select-condition">selection one:</span>
+                <span className="sugarnosugar__select-condition">select one:</span>
                 <form action="" className="sugarnosugar__form">
                     <div className="sugarnosugar__option-container">
                         <input type="checkbox" onChange = {handleChange('sugarnosugar')}

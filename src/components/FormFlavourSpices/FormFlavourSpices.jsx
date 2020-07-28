@@ -22,7 +22,7 @@ export default class FormFlavourSpices extends Component {
                 <Typist avgTypingDelay={10} cursor={{show: false}}>
                     <p className="flavourspice__question">Which herb or spice are you most drawn to?</p>
                     <Typist.Delay ms={200} />
-                <span className="flavourspice__select-condition">selection one:</span>
+                <span className="flavourspice__select-condition">select one:</span>
                  <form action="">
                      <div className="flavourspice__option-container">
                         <input type="checkbox" onChange = {handleChange('flavourspice')}
