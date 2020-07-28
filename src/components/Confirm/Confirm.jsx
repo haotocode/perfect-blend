@@ -8,12 +8,10 @@ export default class Confirm extends Component {
         this.props.nextStep();
     }
     back = e => {
-        // e.preventDefault();
         this.props.prevStep();
     }
 
     render() {
-        // const {values : {firstName, lastName, email, occupation, city, bio, value}} = this.props;
         const {brewpref, sugarnosugar, coffeecolor, flavourpref, flavourspice} = this.props;
         return (
             <div className="confirm">

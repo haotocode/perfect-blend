@@ -22,32 +22,15 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         />
         <article className="blog-post__post-container">
           <header className="blog-post__title-date-container">
-            <h1
-              // style={{
-              //   marginTop: rhythm(1),
-              //   marginBottom: 0,
-              // }}
-              className="blog-post__title"
-            >
+            <h1 className="blog-post__title">
               {post.frontmatter.title}
             </h1>
-            <p
-              // style={{
-              //   ...scale(-1 / 5),
-              //   display: `block`,
-              //   marginBottom: rhythm(1),
-              // }}
-              className="blog-post__date"
-            >
+            <p className="blog-post__date">
               {post.frontmatter.date}
             </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} className="blog-post__post-content"/>
-          <hr
-            // style={{
-            //   marginBottom: rhythm(1),
-            // }}
-          />
+          <hr/>
           <footer>
             <Bio />
           </footer>
@@ -68,30 +51,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                 </AniLink>
               )}
           </div>
-          {/* <ul
-            // style={{
-            //   display: `flex`,
-            //   flexWrap: `wrap`,
-            //   justifyContent: `space-between`,
-            //   listStyle: `none`,
-            //   padding: 0,
-            // }}
-          >
-            <li>
-              {previous && (
-                <AniLink swipe direction="right" to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
-                </AniLink>
-              )}
-            </li>
-            <li>
-              {next && (
-                <AniLink swipe direction="left" to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
-                </AniLink>
-              )}
-            </li>
-          </ul> */}
         </nav>
       </BlogLayout>
     </section>

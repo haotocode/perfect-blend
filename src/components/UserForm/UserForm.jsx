@@ -28,7 +28,6 @@ export class UserForm extends Component {
         coffeecolor: {
             value: "hi",
         },
-        // coffeecolor: "",
         flavourpref: {
             value: "",
         },
@@ -65,17 +64,9 @@ export class UserForm extends Component {
             isChecked: !this.state.isChecked,
         })
     }
-
-    // test handleChange for Select
-
-    // _handleChange = ({ target: { name, value } }) => {
-    //     this.setState({ [name]: value });
-    //   };
-    
   
     render() {
         const {step}= this.state;
-        // const question2value = this.state.question2.value;
         const brewpref = this.state.brewpref.value;
         const sugarnosugar = this.state.sugarnosugar.value;
         const coffeecolor = this.state.coffeecolor.value;
@@ -87,15 +78,6 @@ export class UserForm extends Component {
         switch(step){
             case 1:
                 return(
-                    // <FormUserDetails
-                    // nextStep = {this.nextStep}
-                    // handleChange = {this.handleChange}
-                    // toggleChange = {this.toggleChange}
-                    // question2value = {question2value}
-                    // values={values} 
-                    // // handleChange2={this._handleChange}
-                    // checked = {this.state.isChecked}
-                    // />
                     <FormBrewPref
                     step={step}
                     brewpref = {brewpref}
@@ -121,16 +103,9 @@ export class UserForm extends Component {
                 )
             case 3:
                 return (
-                    // <FormPersonalDetails
-                    // nextStep = {this.nextStep}
-                    // prevStep = {this.prevStep}
-                    // handleChange = {this.handleChange}
-                    // values={values} 
-                    // />
                     <FormCoffeeColor
                     step={step} 
                     coffeecolor ={coffeecolor}
-                    // coffeecolor = {this.coffeecolor}
                     values={values} 
                     coffeecolor = {this.state.coffeecolor}
                     handleChange = {this.handleChange}
@@ -142,12 +117,6 @@ export class UserForm extends Component {
                 )
             case 4:
                 return (
-                    // <FormPersonalDetails
-                    // nextStep = {this.nextStep}
-                    // prevStep = {this.prevStep}
-                    // handleChange = {this.handleChange}
-                    // values={values} 
-                    // />
                     <FormFlavourPref
                     step={step}
                     flavourpref={flavourpref}
@@ -172,20 +141,6 @@ export class UserForm extends Component {
                     prevStep = {this.prevStep}
                     />
                 )
-            // case 6: 
-            //     return(
-            //         <Confirm 
-            //         nextStep = {this.nextStep}
-            //         prevStep = {this.prevStep}
-            //         handleChange = {this.handleChange}
-            //         brewpref = {this.state.brewpref}
-            //         sugarnosugar = {this.state.sugarnosugar}
-            //         coffeecolor = {this.state.coffeecolor}
-            //         flavourpref = {this.state.flavourpref}
-            //         flavourspice = {this.state.flavourspice}
-            //         values={values}
-            //         />
-            //     )
             case 6:
                 return (
                     <Recommendation/>

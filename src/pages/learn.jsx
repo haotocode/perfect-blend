@@ -10,7 +10,7 @@ export default function Test({data}) {
         <Layout>
             <div className="learn__content-container">
             <h1 className="learn__title">Learn</h1>
-            {data.allMysqlPerfectblendlearnsection.edges.map(({ node }, index) => (
+            {data.allMysqlPerfectblendlearnsection.edges.map(({ node }) => (
               <div key={node.id} className="learn__section-container">
                 <p className="learn__section-header">{node.title}</p>
                 <p className="learn__section-content">{node.description}</p>

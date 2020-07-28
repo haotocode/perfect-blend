@@ -24,11 +24,7 @@ const BlogIndex = ({ data, location }) => {
               <article key={node.fields.slug} className="blog__entry">
                 <header className="blog__title-date">
                   <h3 
-                  className="blog__titles"
-                    // style={{
-                    //   marginBottom: rhythm(1 / 4),
-                    // }}
-                  >
+                  className="blog__titles">
                     <AniLink swipe direction="left" style={{ boxShadow: `none` }} to={node.fields.slug} className="blog__links">
                       {title}
                     </AniLink>
