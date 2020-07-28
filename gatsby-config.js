@@ -6,10 +6,7 @@ module.exports = {
       summary: `Freshy new developer`,
     },
     description: `Coffee blend explore for those that want to branch out.`,
-    // siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
-    // social: {
-    //   twitter: `kylemathews`,
-    // },
+
   },
   plugins: [
     {
@@ -76,16 +73,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    // {
-    //   resolve: `gatsby-plugin-typography`,
-    //   options: {
-    //     pathToConfigModule: `src/utils/typography`,
-    //   },
-    // },
     'gatsby-plugin-netlify-cms',
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-mysql`,
       options: {
@@ -106,12 +94,6 @@ module.exports = {
             idFieldName: 'quote-id',
             name: 'perfectblendmainquotessection'
           },
-          // {
-          //   statement: 'SELECT * FROM testimportcoffee',
-          //   idFieldName: 'id',
-          //   name: 'testimportcoffee'
-
-          // }
         ]
       }
     },
